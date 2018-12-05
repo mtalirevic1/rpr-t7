@@ -8,9 +8,7 @@ public class Grad implements Serializable {
     private int brojStanovnika;
     private double [] temperature=new double [1000];
 
-    Grad(String naziv, int brojStanovnika){
-        this.naziv=naziv;
-        this.brojStanovnika=brojStanovnika;
+    Grad(){
     }
 
     public double[] getTemperature() {
