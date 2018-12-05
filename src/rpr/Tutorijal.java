@@ -7,15 +7,11 @@ import java.util.Scanner;
 
 public class Tutorijal {
 
-    public static void main(String[] args) {
-
-    }
-
     public static ArrayList<Grad> ucitajGradove() {
         Scanner ulaz;
         ArrayList<Grad> gradovi=new ArrayList<>();
         try {
-            ulaz = new Scanner(new FileReader("mjerenja.txt")).useDelimiter("[,]");
+            ulaz = new Scanner(new FileReader("mjerenja.txt")).useDelimiter("[\\r,]");
         } catch (FileNotFoundException e) {
             System.out.println("Datoteka mjerenja.txt ne postoji ili se ne moze otvoriti.");
             System.out.println("Greska: " + e);
@@ -23,21 +19,20 @@ public class Tutorijal {
         }
 
         try {
-            int vel = 0;
             while (ulaz.hasNext()) {
                 Grad grad = new Grad();
                 double [] niz=new double[1000];
-                String naziv = ulaz.nextLine();
+                String naziv = ulaz.next();
                 int i=0;
                 while (ulaz.hasNextDouble()) {
-                    niz[i] = ulaz.nextDouble();
+                    niz[i] = Double.parseDouble(ulaz.next());
                     i++;
+                    if(i==1000) break;
                 }
+                String naziv2=naziv;
                 grad.setNaziv(naziv);
                 grad.setTemperature(niz);
                 gradovi.add(grad);
-                vel++;
-                if(vel==1000) break;
             }
 
         } catch (Exception e) {
@@ -47,5 +42,21 @@ public class Tutorijal {
             ulaz.close();
         }
         return gradovi;
+    }
+
+    public static void main(String[] args) {
+        ArrayList<Grad> gradovi=new ArrayList<>(ucitajGradove());
+        for(Grad g: gradovi){
+            System.out.print(g.getNaziv()+" ");
+            for(double x: g.getTemperature()){
+                System.out.print(x+" ");
+            }
+        }
+
+
+        for(Grad g: gradovi){
+            System.out.print(g.getNaziv());
+            //System.out.println();
+        }
     }
 }
