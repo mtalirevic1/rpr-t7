@@ -8,7 +8,7 @@ public class Grad implements Serializable {
     private int brojStanovnika;
     private double [] temperature=new double [1000];
 
-    Grad(){
+   public Grad(){
     }
 
     public double[] getTemperature() {
