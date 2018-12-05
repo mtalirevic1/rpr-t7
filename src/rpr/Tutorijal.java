@@ -1,5 +1,7 @@
 package rpr;
 
+import java.beans.XMLDecoder;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
@@ -42,6 +44,28 @@ public class Tutorijal {
             ulaz.close();
         }
         return gradovi;
+    }
+
+    public static UN ucitajXml(ArrayList<Grad> gradovi){
+        UN unitedNations= null;
+
+        try{
+            XMLDecoder ulaz= new XMLDecoder(new FileInputStream("drzave.xml"));
+            unitedNations=(UN) ulaz.readObject();
+            ulaz.close();
+        }catch(Exception e){
+            System.out.println("Greska: "+e);
+        }
+
+        for(Drzava d: unitedNations.getDrzave()){
+            for(int i=0; i<gradovi.size();i++){
+                if(d.getGlavniGrad().getNaziv().equals(gradovi.get(i).getNaziv())){
+                    d.getGlavniGrad().setTemperature(gradovi.get(i).getTemperature());
+                }
+            }
+        }
+
+        return unitedNations;
     }
 
     public static void main(String[] args) {
