@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="10.0.2" class="java.beans.XMLDecoder">
+ <object class="rpr.UN" id="UN0">
+  <void property="drzave">
+   <void method="add">
+    <object class="rpr.Drzava">
+     <void property="brojStanovnika">
+      <int>3531159</int>
+     </void>
+     <void property="glavniGrad">
+      <object class="rpr.Grad" id="Grad0">
+       <void property="brojStanovnika">
+        <int>400000</int>
+       </void>
+       <void property="naziv">
+        <string>Sarajevo</string>
+       </void>
+       <void property="temperature">
+        <void index="0">
+         <double>5.4</double>
+        </void>
+        <void index="1">
+         <double>15.8</double>
+        </void>
+        <void index="2">
+         <double>2.3</double>
+        </void>
+        <void index="3">
+         <double>0.44</double>
+        </void>
+        <void index="4">
+         <double>-1.1</double>
+        </void>
+       </void>
+      </object>
+     </void>
+     <void property="jedinicaZaPovrsinu">
+      <string>km2</string>
+     </void>
+     <void property="naziv">
+      <string>Bosna i Hercegovina</string>
+     </void>
+     <void property="povrsina">
+      <double>51129.0</double>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="rpr.Drzava">
+     <void property="brojStanovnika">
+      <int>82792400</int>
+     </void>
+     <void property="glavniGrad">
+      <object class="rpr.Grad">
+       <void property="brojStanovnika">
+        <int>3711930</int>
+       </void>
+       <void property="naziv">
+        <string>Berlin</string>
+       </void>
+      </object>
+     </void>
+     <void property="jedinicaZaPovrsinu">
+      <string>km2</string>
+     </void>
+     <void property="naziv">
+      <string>Njemacka</string>
+     </void>
+     <void property="povrsina">
+      <double>357386.0</double>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="rpr.Drzava">
+     <void property="brojStanovnika">
+      <int>17104833</int>
+     </void>
+     <void property="glavniGrad">
+      <object class="rpr.Grad">
+       <void property="brojStanovnika">
+        <int>2410960</int>
+       </void>
+       <void property="naziv">
+        <string>Amsterdam</string>
+       </void>
+      </object>
+     </void>
+     <void property="jedinicaZaPovrsinu">
+      <string>km2</string>
+     </void>
+     <void property="naziv">
+      <string>Nizozemska</string>
+     </void>
+     <void property="povrsina">
+      <double>42508.0</double>
+     </void>
+    </object>
+   </void>
+  </void>
+ </object>
+</java>

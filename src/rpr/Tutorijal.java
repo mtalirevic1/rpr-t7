@@ -95,9 +95,14 @@ public class Tutorijal {
             }
         }
 
+        System.out.println();
+
         UN unitedNations=new UN(ucitajXml(gradovi));
         for(Drzava d : unitedNations.getDrzave()){
             System.out.println(d.getNaziv()+"\nGlavni grad: "+d.getGlavniGrad().getNaziv()+"\nPovrsina: "+d.getPovrsina()+" "+d.getJedinicaZaPovrsinu());
+            System.out.println();
         }
+
+        zapisiXml(unitedNations);
     }
 }
