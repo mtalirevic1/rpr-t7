@@ -7,11 +7,19 @@ public class Drzava implements Serializable {
     private String naziv;
     private int brojStanovnika;
     private double povrsina;
-    private String jedinicaPovrsine;
+    private String jedinicaZaPovrsinu;
     private Grad glavniGrad;
 
     public Drzava() {
 
+    }
+
+    public Drzava(String naziv, int brojStanovnika, double povrsina, String jedinicaZaPovrsinu, Grad glavniGrad) {
+        setNaziv(naziv);
+        setBrojStanovnika(brojStanovnika);
+        setPovrsina(povrsina);
+        setJedinicaZaPovrsinu(jedinicaZaPovrsinu);
+        setGlavniGrad(glavniGrad);
     }
 
     public String getNaziv() {
@@ -38,12 +46,12 @@ public class Drzava implements Serializable {
         this.povrsina = povrsina;
     }
 
-    public String getJedinicaPovrsine() {
-        return jedinicaPovrsine;
+    public String getJedinicaZaPovrsinu() {
+        return jedinicaZaPovrsinu;
     }
 
-    public void setJedinicaPovrsine(String jedinicaPovrsine) {
-        this.jedinicaPovrsine = jedinicaPovrsine;
+    public void setJedinicaZaPovrsinu(String jedinicaPovrsine) {
+        this.jedinicaZaPovrsinu = jedinicaPovrsine;
     }
 
     public Grad getGlavniGrad() {
