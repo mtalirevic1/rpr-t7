@@ -1,85 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<java version="1.8.0_191" class="java.beans.XMLDecoder">
-    <object class="rpr.UN" id="UN0">
-        <void property="drzave">
-            <void method="add">
-                <object class="rpr.Drzava">
-                    <void property="naziv">
-                        <string>Bosna i Hercegovina</string>
-                    </void>
-                    <void property="brojStanovnika">
-                        <int>3531159</int>
-                    </void>
-                    <void property="povrsina">
-                        <double>51129</double>
-                    </void>
-                    <void property="jedinicaZaPovrsinu">
-                        <string>km2</string>
-                    </void>
-                    <void property="glavniGrad">
-                        <object class="rpr.Grad">
-                            <void property="naziv">
-                                <string>Sarajevo</string>
-                            </void>
-                            <void property="brojStanovnika">
-                                <int>400000</int>
-                            </void>
-                        </object>
-                    </void>
-                </object>
-            </void>
-            <void method="add">
-                <object class="rpr.Drzava">
-                    <void property="naziv">
-                        <string>Njemacka</string>
-                    </void>
-                    <void property="brojStanovnika">
-                        <int>82792400</int>
-                    </void>
-                    <void property="povrsina">
-                        <double>357386</double>
-                    </void>
-                    <void property="jedinicaZaPovrsinu">
-                        <string>km2</string>
-                    </void>
-                    <void property="glavniGrad">
-                        <object class="rpr.Grad">
-                            <void property="naziv">
-                                <string>Berlin</string>
-                            </void>
-                            <void property="brojStanovnika">
-                                <int>3711930</int>
-                            </void>
-                        </object>
-                    </void>
-                </object>
-            </void>
-            <void method="add">
-                <object class="rpr.Drzava">
-                    <void property="naziv">
-                        <string>Nizozemska</string>
-                    </void>
-                    <void property="brojStanovnika">
-                        <int>17104833</int>
-                    </void>
-                    <void property="povrsina">
-                        <double>42508</double>
-                    </void>
-                    <void property="jedinicaZaPovrsinu">
-                        <string>km2</string>
-                    </void>
-                    <void property="glavniGrad">
-                        <object class="rpr.Grad">
-                            <void property="naziv">
-                                <string>Amsterdam</string>
-                            </void>
-                            <void property="brojStanovnika">
-                                <int>2410960</int>
-                            </void>
-                        </object>
-                    </void>
-                </object>
-            </void>
-        </void>
-    </object>
-</java>
+<?xml version="1.0"?>
+<drzave>
+    <drzava stanovnika="3500000">
+        <naziv>Bosna i Hercegovina</naziv>
+        <glavnigrad stanovnika="400000">
+            <naziv>Sarajevo</naziv>
+        </glavnigrad>
+        <povrsina jedinica="km2">51129</povrsina>
+        <moneta naziv="KM" />
+    </drzava>
+    <drzava stanovnika="400000">
+        <naziv>Hrvatska</naziv>
+        <glavnigrad stanovnika="500000">
+            <naziv>Zagreb</naziv>
+        </glavnigrad>
+        <povrsina jedinica="km2">63129</povrsina>
+        <moneta naziv="KN" />
+    </drzava>
+    <drzava stanovnika="500000">
+        <naziv>Srbija</naziv>
+        <glavnigrad stanovnika="600000">
+            <naziv>Beograd</naziv>
+        </glavnigrad>
+        <povrsina jedinica="km2">74129</povrsina>
+        <moneta naziv="RSD" />
+    </drzava>
+    <drzava stanovnika="5555">
+        <naziv>Kosovo</naziv>
+        <glavnigrad stanovnika="222">
+            <naziv>Pristina</naziv>
+        </glavnigrad>
+        <povrsina jedinica="km2">7452</povrsina>
+        <moneta naziv="EUR" />
+    </drzava>
+</drzave>

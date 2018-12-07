@@ -5,7 +5,7 @@
    <void method="add">
     <object class="rpr.Drzava">
      <void property="brojStanovnika">
-      <int>3531159</int>
+      <int>3500000</int>
      </void>
      <void property="glavniGrad">
       <object class="rpr.Grad" id="Grad0">
@@ -48,15 +48,15 @@
    <void method="add">
     <object class="rpr.Drzava">
      <void property="brojStanovnika">
-      <int>82792400</int>
+      <int>400000</int>
      </void>
      <void property="glavniGrad">
       <object class="rpr.Grad">
        <void property="brojStanovnika">
-        <int>3711930</int>
+        <int>500000</int>
        </void>
        <void property="naziv">
-        <string>Berlin</string>
+        <string>Zagreb</string>
        </void>
       </object>
      </void>
@@ -64,25 +64,25 @@
       <string>km2</string>
      </void>
      <void property="naziv">
-      <string>Njemacka</string>
+      <string>Hrvatska</string>
      </void>
      <void property="povrsina">
-      <double>357386.0</double>
+      <double>63129.0</double>
      </void>
     </object>
    </void>
    <void method="add">
     <object class="rpr.Drzava">
      <void property="brojStanovnika">
-      <int>17104833</int>
+      <int>500000</int>
      </void>
      <void property="glavniGrad">
       <object class="rpr.Grad">
        <void property="brojStanovnika">
-        <int>2410960</int>
+        <int>600000</int>
        </void>
        <void property="naziv">
-        <string>Amsterdam</string>
+        <string>Beograd</string>
        </void>
       </object>
      </void>
@@ -90,10 +90,36 @@
       <string>km2</string>
      </void>
      <void property="naziv">
-      <string>Nizozemska</string>
+      <string>Srbija</string>
      </void>
      <void property="povrsina">
-      <double>42508.0</double>
+      <double>74129.0</double>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="rpr.Drzava">
+     <void property="brojStanovnika">
+      <int>5555</int>
+     </void>
+     <void property="glavniGrad">
+      <object class="rpr.Grad">
+       <void property="brojStanovnika">
+        <int>222</int>
+       </void>
+       <void property="naziv">
+        <string>Pristina</string>
+       </void>
+      </object>
+     </void>
+     <void property="jedinicaZaPovrsinu">
+      <string>km2</string>
+     </void>
+     <void property="naziv">
+      <string>Kosovo</string>
+     </void>
+     <void property="povrsina">
+      <double>7452.0</double>
      </void>
     </object>
    </void>
