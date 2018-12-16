@@ -8,6 +8,16 @@ public class Grad implements Serializable {
     private int brojStanovnika=0;
     private double [] temperature=new double [1000];
 
+    public int getBrojTemperatura() {
+        return brojTemperatura;
+    }
+
+    public void setBrojTemperatura(int brojTemperatura) {
+        this.brojTemperatura = brojTemperatura;
+    }
+
+    private int brojTemperatura;
+
    public Grad(){
     }
 

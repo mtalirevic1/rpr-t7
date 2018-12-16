@@ -13,8 +13,8 @@
         <glavnigrad stanovnika="500000">
             <naziv>Zagreb</naziv>
         </glavnigrad>
-        <povrsina jedinica="km2">63129</povrsina>
         <moneta naziv="KN" />
+        <povrsina jedinica="km2">63129</povrsina>
     </drzava>
     <drzava stanovnika="500000">
         <naziv>Srbija</naziv>

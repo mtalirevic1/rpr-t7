@@ -45,6 +45,7 @@ public class Tutorijal {
                     i++;
                     if (i == 1000) break;
                 }
+                grad.setBrojTemperatura(i);
                 String naziv2 = naziv;
                 grad.setNaziv(naziv);
                 grad.setTemperature(niz);
@@ -173,7 +174,7 @@ public class Tutorijal {
         ArrayList<Grad> gradovi = new ArrayList<>(ucitajGradove());
         for (Grad g : gradovi) {
             System.out.print(g.getNaziv() + " ");
-            for (double x : g.getTemperature()) {
+            for (double x: g.getTemperature()) {
                 System.out.print(x + " ");
             }
         }
